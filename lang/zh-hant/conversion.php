@@ -1,0 +1,21 @@
+<?php
+return [
+    'kilometer' => '公里',
+    'meter' => '公尺',
+    'centimeter' => '公分',
+    'millimeter' => '公釐',
+    'micrometer' => '微米',
+    'nanometer' => '奈米',
+    'inch' => '英寸',
+    'foot' => '英尺',
+    'yard' => '碼',
+    'furlong' => '浪',
+    'mile' => '英里',
+    'tonne' => '公噸',
+    'kilogram' => '公斤',
+    'gram' => '克',
+    'ounce' => '盎司',
+    'pound' => '磅',
+    'long_ton' => '英噸',
+    'short_ton' => '美噸',
+];

@@ -1,0 +1,21 @@
+<?php
+return [
+    'kilometer' => 'kilometer',
+    'meter' => 'meter',
+    'centimeter' => 'centimeter',
+    'millimeter' => 'millimeter',
+    'micrometer' => 'micrometer',
+    'nanometer' => 'nanometer',
+    'inch' => 'inch',
+    'foot' => 'foot',
+    'yard' => 'yard',
+    'furlong' => 'furlong',
+    'mile' => 'mile',
+    'tonne' => 'tonne',
+    'kilogram' => 'kilogram',
+    'gram' => 'gram',
+    'ounce' => 'ounce',
+    'pound' => 'pound',
+    'long_ton' => 'long ton',
+    'short_ton' => 'short ton',
+];

@@ -1,0 +1,145 @@
+@import "~bootstrap/scss/bootstrap";
+@import 'material-icons/iconfont/material-icons.css';
+
+body {
+    // background: #f1f4f6;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+
+}
+
+.container {
+    max-width: 1140px !important;
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1140px !important;
+        ;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px !important;
+        ;
+    }
+}
+
+#main {
+    min-height: 1080px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+
+    .container {
+        max-width: 1320px;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #3b71ca;
+}
+
+.logo {
+    font-weight: 900;
+    font-size: 28px;
+}
+
+.navbar-dcode {
+    border-bottom: 1px solid #f1f4f6;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* Color of the links BEFORE scroll */
+.navbar-scroll .nav-link,
+.navbar-scroll .fa-bars,
+.navbar-scroll .navar-brand {
+    color: #4f4f4f;
+}
+
+.navbar-scroll .nav-link:hover {
+    color: #1266f1;
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .fa-bars,
+.navbar-scrolled .navar-brand {
+    color: #4f4f4f;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scroll,
+.navbar-scrolled {
+    background-color: #fff;
+}
+
+/* An optional height of the navbar AFTER scroll */
+.navbar.navbar-scroll.navbar-scrolled {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/*
+* card
+*/
+.card {
+    box-shadow: 0 0.46875rem 2.1875rem rgb(4 9 20 / 3%), 0 0.9375rem 1.40625rem rgb(4 9 20 / 3%), 0 0.25rem 0.53125rem rgb(4 9 20 / 5%), 0 0.125rem 0.1875rem rgb(4 9 20 / 3%);
+    border-width: 0;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(26, 54, 126, 0.125);
+    display: block;
+    // border-radius: 15px;
+
+    p {
+        color: #666;
+        font-size: 16px;
+        line-height: 1.7;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    .card-header {
+        display: flex;
+        align-items: center;
+        border-bottom-width: 1px;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-right: .625rem;
+        height: 3.5rem;
+    }
+
+    .card-header,
+    .card-title {
+        text-transform: uppercase;
+        color: rgba(13, 27, 62, 0.7);
+        font-weight: bold;
+        font-size: .88rem;
+    }
+
+    .card-header {
+        padding: .75rem 1.25rem;
+        margin-bottom: 0;
+        color: inherit;
+        background-color: #fff;
+        border-bottom: 1px solid rgba(26, 54, 126, 0.125);
+    }
+
+    .card-footer {
+        padding: .75rem 1.25rem;
+        background-color: #fff;
+        border-top: 1px solid rgba(26, 54, 126, 0.125);
+    }
+}
+
+// .cards {
+//     .cards_image {
+//         height: 200px;
+//     }
+// }
+.mt-10 {
+    margin-top: 10px;
+}
