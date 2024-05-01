@@ -7,4 +7,5 @@ return [
     'imperial_units' => '英制',
     'enter_value' => '輸入數值',
     'weight_conversion' => '重量換算',
+    'proceed' => '前往',
 ];

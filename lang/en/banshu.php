@@ -7,4 +7,5 @@ return [
     'imperial_units' => 'Imperial Units',
     'enter_value' => 'Enter Value',
     'weight_conversion' => 'Weight Conversion',
+    'proceed' => 'Proceed',
 ];

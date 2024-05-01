@@ -16,7 +16,7 @@
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg fixed-top navbar-scroll navbar-dcode">
             <div class="container">
-                <a class="navbar-brand logo" href="/"><span style="color: #000000;">B</span><span
+                <a class="navbar-brand logo" href="/{{ app()->getLocale() }}"><span style="color: #000000;">B</span><span
                         style="color: #5e9693;">anshu</span></a>
                 <button class="navbar-toggler ps-0" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
@@ -26,17 +26,8 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item active">
-                            <a class="nav-link" aria-current="page" href="/tarot">{{
+                            <a class="nav-link" aria-current="page" href="/{{ app()->getLocale() }}/conversion">{{
                                 __('banshu.conversion_calculator')}}</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="/stick">詩籤{{ App::getLocale() }}</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="/astrology/zodiac">{{ __('auth.failed') }}</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="/astrology/zodiac/date">星盤</a>
                         </li>
                     </ul>
 
