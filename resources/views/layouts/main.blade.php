@@ -17,7 +17,7 @@
         <nav class="navbar navbar-expand-lg fixed-top navbar-scroll navbar-dcode">
             <div class="container">
                 <a class="navbar-brand logo" href="/{{ app()->getLocale() }}"><span style="color: #000000;">B</span><span
-                        style="color: #5e9693;">anshu</span></a>
+                        style="color: #5e9693;">anshus</span></a>
                 <button class="navbar-toggler ps-0" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -27,7 +27,7 @@
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item active">
                             <a class="nav-link" aria-current="page" href="/{{ app()->getLocale() }}/conversion">{{
-                                __('banshu.conversion_calculator')}}</a>
+                                __('banshus.conversion_calculator')}}</a>
                         </li>
                     </ul>
 
