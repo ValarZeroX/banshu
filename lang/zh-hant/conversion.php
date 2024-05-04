@@ -18,4 +18,8 @@ return [
     'pound' => '磅',
     'long_ton' => '英噸',
     'short_ton' => '美噸',
+    'celsius' => '攝氏',
+    'fahrenheit' => '華氏',
+    'kelvin' => '凱氏',
+    'rankine' => '蘭金',
 ];

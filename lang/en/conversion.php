@@ -18,4 +18,8 @@ return [
     'pound' => 'pound',
     'long_ton' => 'long ton',
     'short_ton' => 'short ton',
+    'celsius' => 'celsius',
+    'fahrenheit' => 'fahrenheit',
+    'kelvin' => 'kelvin',
+    'rankine' => 'rankine',
 ];

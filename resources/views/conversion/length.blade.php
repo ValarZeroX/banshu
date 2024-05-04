@@ -23,7 +23,7 @@
                         <div class="col">
                             <label for="kilometer" class="form-label">{{ __('conversion.kilometer')}}</label>
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control decOnly lengthCalculate"
+                                <input type="text" class="form-control decOnly calculate"
                                     placeholder="{{ __('banshus.enter_value')}}" id="kilometer">
                                 <span class="input-group-text">km</span>
                             </div>
@@ -31,7 +31,7 @@
                         <div class="col">
                             <label for="meter" class="form-label">{{ __('conversion.meter')}}</label>
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control decOnly lengthCalculate"
+                                <input type="text" class="form-control decOnly calculate"
                                     placeholder="{{ __('banshus.enter_value')}}" id="meter">
                                 <span class="input-group-text">m</span>
                             </div>
@@ -39,7 +39,7 @@
                         <div class="col">
                             <label for="centimeter" class="form-label">{{ __('conversion.centimeter')}}</label>
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control decOnly lengthCalculate"
+                                <input type="text" class="form-control decOnly calculate"
                                     placeholder="{{ __('banshus.enter_value')}}" id="centimeter">
                                 <span class="input-group-text">cm</span>
                             </div>
@@ -47,7 +47,7 @@
                         <div class="col">
                             <label for="millimeter" class="form-label">{{ __('conversion.millimeter')}}</label>
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control decOnly lengthCalculate"
+                                <input type="text" class="form-control decOnly calculate"
                                     placeholder="{{ __('banshus.enter_value')}}" id="millimeter">
                                 <span class="input-group-text">mm</span>
                             </div>
@@ -55,7 +55,7 @@
                         <div class="col">
                             <label for="micrometer" class="form-label">{{ __('conversion.micrometer')}}</label>
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control decOnly lengthCalculate"
+                                <input type="text" class="form-control decOnly calculate"
                                     placeholder="{{ __('banshus.enter_value')}}" id="micrometer">
                                 <span class="input-group-text">μm</span>
                             </div>
@@ -63,7 +63,7 @@
                         <div class="col">
                             <label for="nanometer" class="form-label">{{ __('conversion.nanometer')}}</label>
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control decOnly lengthCalculate"
+                                <input type="text" class="form-control decOnly calculate"
                                     placeholder="{{ __('banshus.enter_value')}}" id="nanometer">
                                 <span class="input-group-text">nm</span>
                             </div>
@@ -82,7 +82,7 @@
                         <div class="col">
                             <label for="yard" class="form-label">{{ __('conversion.yard')}}</label>
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control decOnly lengthCalculate"
+                                <input type="text" class="form-control decOnly calculate"
                                     placeholder="{{ __('banshus.enter_value')}}" id="yard">
                                 <span class="input-group-text">yd</span>
                             </div>
@@ -90,7 +90,7 @@
                         <div class="col">
                             <label for="foot" class="form-label">{{ __('conversion.foot')}}</label>
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control decOnly lengthCalculate"
+                                <input type="text" class="form-control decOnly calculate"
                                     placeholder="{{ __('banshus.enter_value')}}" id="foot">
                                 <span class="input-group-text">ft</span>
                             </div>
@@ -98,7 +98,7 @@
                         <div class="col">
                             <label for="inch" class="form-label">{{ __('conversion.inch')}}</label>
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control decOnly lengthCalculate"
+                                <input type="text" class="form-control decOnly calculate"
                                     placeholder="{{ __('banshus.enter_value')}}" id="inch">
                                 <span class="input-group-text">in</span>
                             </div>
@@ -106,7 +106,7 @@
                         <div class="col">
                             <label for="furlong" class="form-label">{{ __('conversion.furlong')}}</label>
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control decOnly lengthCalculate"
+                                <input type="text" class="form-control decOnly calculate"
                                     placeholder="{{ __('banshus.enter_value')}}" id="furlong">
                                 <span class="input-group-text">fur</span>
                             </div>
@@ -114,7 +114,7 @@
                         <div class="col">
                             <label for="mile" class="form-label">{{ __('conversion.mile')}}</label>
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control decOnly lengthCalculate"
+                                <input type="text" class="form-control decOnly calculate"
                                     placeholder="{{ __('banshus.enter_value')}}" id="mile">
                                 <span class="input-group-text">mile</span>
                             </div>

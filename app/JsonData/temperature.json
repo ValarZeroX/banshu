@@ -1,0 +1,26 @@
+{
+    "celsius": {
+        "celsius": 1,
+        "fahrenheit": "(a*(9/5))+32",
+        "kelvin": "a+273.15",
+        "rankine": "(a*(9/5))+491.67"
+    },
+    "fahrenheit": {
+        "celsius": "(a-32)*(5/9)",
+        "fahrenheit": 1,
+        "kelvin": "(a+459.67)*(5/9)",
+        "rankine": "a+459.67"
+    },
+    "kelvin": {
+        "celsius": "a-273.15",
+        "fahrenheit": "((9/5)*a)-459.67",
+        "kelvin": 1,
+        "rankine": "(a*(9/5))"
+    },
+    "rankine": {
+        "celsius": "(a-491.67)*(5/9)",
+        "fahrenheit": "a-459.67",
+        "kelvin": "(a*(5/9))",
+        "rankine": 1
+    }
+}

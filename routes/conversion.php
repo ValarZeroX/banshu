@@ -22,4 +22,5 @@ Route::get('/', function (string $locale) {
 
 Route::get('/length', [Conversion::class, 'getLength']);
 Route::get('/weight', [Conversion::class, 'getWeight']);
+Route::get('/temperature ', [Conversion::class, 'getTemperature']);
 // Route::redirect('/', '/en');

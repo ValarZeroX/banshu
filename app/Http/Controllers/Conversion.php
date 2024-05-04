@@ -28,4 +28,17 @@ class Conversion extends Controller
 
         return view('conversion/weight', ['event' => true, 'data' => $aData]);
     }
+
+    public function getTemperature(Request $request, $locale)
+    {
+
+        $aFile = app_path('JsonData/temperature.json');
+        $sJsonData = file_get_contents($aFile);
+        $aData = json_decode($sJsonData, true);
+        App::setLocale($locale);
+
+        return view('conversion/temperature', ['event' => true, 'data' => $aData]);
+    }
+
+
 }

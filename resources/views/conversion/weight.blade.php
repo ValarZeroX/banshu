@@ -23,7 +23,7 @@
                         <div class="col">
                             <label for="gram" class="form-label">{{ __('conversion.gram')}}</label>
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control decOnly lengthCalculate"
+                                <input type="text" class="form-control decOnly calculate"
                                     placeholder="{{ __('banshus.enter_value')}}" id="gram">
                                 <span class="input-group-text">g</span>
                             </div>
@@ -31,7 +31,7 @@
                         <div class="col">
                             <label for="kilogram" class="form-label">{{ __('conversion.kilogram')}}</label>
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control decOnly lengthCalculate"
+                                <input type="text" class="form-control decOnly calculate"
                                     placeholder="{{ __('banshus.enter_value')}}" id="kilogram">
                                 <span class="input-group-text">kg</span>
                             </div>
@@ -39,7 +39,7 @@
                         <div class="col">
                             <label for="tonne" class="form-label">{{ __('conversion.tonne')}}</label>
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control decOnly lengthCalculate"
+                                <input type="text" class="form-control decOnly calculate"
                                     placeholder="{{ __('banshus.enter_value')}}" id="tonne">
                                 <span class="input-group-text">mt</span>
                             </div>
@@ -58,7 +58,7 @@
                         <div class="col">
                             <label for="ounce" class="form-label">{{ __('conversion.ounce')}}</label>
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control decOnly lengthCalculate"
+                                <input type="text" class="form-control decOnly calculate"
                                     placeholder="{{ __('banshus.enter_value')}}" id="ounce">
                                 <span class="input-group-text">oz</span>
                             </div>
@@ -66,7 +66,7 @@
                         <div class="col">
                             <label for="pound" class="form-label">{{ __('conversion.pound')}}</label>
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control decOnly lengthCalculate"
+                                <input type="text" class="form-control decOnly calculate"
                                     placeholder="{{ __('banshus.enter_value')}}" id="pound">
                                 <span class="input-group-text">lb</span>
                             </div>
@@ -74,7 +74,7 @@
                         <div class="col">
                             <label for="long_ton" class="form-label">{{ __('conversion.long_ton')}}</label>
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control decOnly lengthCalculate"
+                                <input type="text" class="form-control decOnly calculate"
                                     placeholder="{{ __('banshus.enter_value')}}" id="long_ton">
                                 <span class="input-group-text">LT</span>
                             </div>
@@ -82,7 +82,7 @@
                         <div class="col">
                             <label for="short_ton" class="form-label">{{ __('conversion.short_ton')}}</label>
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control decOnly lengthCalculate"
+                                <input type="text" class="form-control decOnly calculate"
                                     placeholder="{{ __('banshus.enter_value')}}" id="short_ton">
                                 <span class="input-group-text">ST</span>
                             </div>

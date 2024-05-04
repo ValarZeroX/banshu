@@ -8,4 +8,5 @@ return [
     'enter_value' => '輸入數值',
     'weight_conversion' => '重量換算',
     'proceed' => '前往',
+    'temperature_conversion' => '溫度換算',
 ];

@@ -8,4 +8,5 @@ return [
     'enter_value' => 'Enter Value',
     'weight_conversion' => 'Weight Conversion',
     'proceed' => 'Proceed',
+    'temperature_conversion' => 'Temperature Conversion',
 ];
