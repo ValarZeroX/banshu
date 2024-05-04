@@ -13,7 +13,7 @@ class PagesController extends Controller
 
         $path = public_path('sitemap.xml');
             SitemapGenerator::create(config('app.url'))->hasCrawled(function (Url $url) {
-
+                return $url;
             })->writeToFile($path);
     }
 
