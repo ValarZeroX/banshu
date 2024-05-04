@@ -2,6 +2,15 @@ import { forEach } from "lodash";
 
 $(function () {
     'use strict'
+        $('#languageSelect').change(function() {
+            var currentUrl = window.location.href;
+            var language = $(this).val();
+            var parts = currentUrl.split("/");
+            parts[3] = language
+            var newUrl = parts.join("/");
+            window.location.href = newUrl;
+        });
+
     $(".decOnly").on("keypress", function (event) {
         if ((event.which != 46 || $(this).val().indexOf('.') != -1) &&
         (event.which < 48 || event.which > 57) &&

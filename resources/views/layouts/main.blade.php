@@ -6,7 +6,7 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-CV3LRT7NNV"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
+        window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
@@ -25,8 +25,8 @@
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg fixed-top navbar-scroll navbar-dcode">
             <div class="container">
-                <a class="navbar-brand logo" href="/{{ app()->getLocale() }}"><span style="color: #000000;">B</span><span
-                        style="color: #5e9693;">anshus</span></a>
+                <a class="navbar-brand logo" href="/{{ app()->getLocale() }}"><span
+                        style="color: #000000;">B</span><span style="color: #5e9693;">anshus</span></a>
                 <button class="navbar-toggler ps-0" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -39,7 +39,16 @@
                                 __('banshus.conversion_calculator')}}</a>
                         </li>
                     </ul>
-
+                    <div class="ms-auto mb-2 mb-lg-0">
+                        <select class="form-select" id="languageSelect">
+                            @foreach(config('app.available_locales') as $locale => $name)
+                            <option value="{{$locale}}" {{ app()->getLocale() == $locale ?
+                                'selected' : '' }}>
+                                {{ $name }}
+                            </option>
+                            @endforeach
+                        </select>
+                    </div>
                     <ul class="navbar-nav flex-row">
                         <li class="nav-item">
                             <a class="nav-link px-2" href="#!">
