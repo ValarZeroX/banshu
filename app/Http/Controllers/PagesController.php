@@ -12,9 +12,7 @@ class PagesController extends Controller
         // $langArray = ['en', 'zh-Hant'];
 
         $path = public_path('sitemap.xml');
-            SitemapGenerator::create(config('app.url'))->hasCrawled(function (Url $url) {
-                return $url;
-            })->writeToFile($path);
+            SitemapGenerator::create(config('app.url'))->writeToFile($path);
     }
 
     public function sitemap()
