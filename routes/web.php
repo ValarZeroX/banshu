@@ -19,7 +19,6 @@ Route::get('/', function () {
 });
 
 Route::get('/{locale}', function (string $locale) {
-    dd($locale);
     App::setLocale($locale);
     return view('index');
 });
