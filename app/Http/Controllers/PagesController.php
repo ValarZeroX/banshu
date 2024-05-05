@@ -17,7 +17,6 @@ class PagesController extends Controller
 
     public function sitemap()
     {
-        $xmlContent = file_get_contents(public_path('sitemap.xml'));
-        return view('sitemap', ['xmlContent' => $xmlContent]);
+        return response()->file('sitemap.xml');
     }
 }
