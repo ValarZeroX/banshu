@@ -9,4 +9,5 @@ return [
     'weight_conversion' => '重量換算',
     'proceed' => '前往',
     'temperature_conversion' => '溫度換算',
+    'disclaimer' => '免責聲明',
 ];

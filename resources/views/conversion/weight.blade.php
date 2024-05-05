@@ -1,4 +1,5 @@
 @extends('layouts.main')
+@section('title', __('banshus.weight_conversion'))
 @section('description', __('description.weight'))
 @section('main')
 <div class="container">

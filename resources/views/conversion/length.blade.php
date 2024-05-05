@@ -1,4 +1,5 @@
 @extends('layouts.main')
+@section('title', __('banshus.length_conversion'))
 @section('description', __('description.length'))
 @section('main')
 <div class="container">

@@ -1,4 +1,5 @@
 @extends('layouts.main')
+@section('title', __('banshus.temperature_conversion'))
 @section('description', __('description.temperature'))
 @section('main')
 <div class="container">
