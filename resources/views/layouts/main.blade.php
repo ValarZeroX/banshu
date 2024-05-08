@@ -35,8 +35,12 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item active">
+                            <a class="nav-link" aria-current="page" href="/{{ app()->getLocale() }}/health">{{
+                                __('banshus.health')}}</a>
+                        </li>
+                        <li class="nav-item active">
                             <a class="nav-link" aria-current="page" href="/{{ app()->getLocale() }}/conversion">{{
-                                __('banshus.conversion_calculator')}}</a>
+                                __('banshus.other')}}</a>
                         </li>
                     </ul>
                     <div class="ms-auto mb-2 mb-lg-0">

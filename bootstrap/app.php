@@ -13,6 +13,9 @@ return Application::configure(basePath: dirname(__DIR__))
             Route::prefix('/{locale}/conversion')
                 ->middleware('web')
                 ->group(base_path('routes/conversion.php'));
+            Route::prefix('/{locale}/health')
+                ->middleware('web')
+                ->group(base_path('routes/health.php'));
             Route::prefix('/')
                 ->middleware('web')
                 ->group(base_path('routes/web.php'));

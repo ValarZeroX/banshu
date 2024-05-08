@@ -40,5 +40,15 @@ class Conversion extends Controller
         return view('conversion/temperature', ['event' => true, 'data' => $aData]);
     }
 
+    public function getArea(Request $request, $locale)
+    {
+
+        $aFile = app_path('JsonData/area.json');
+        $sJsonData = file_get_contents($aFile);
+        $aData = json_decode($sJsonData, true);
+        App::setLocale($locale);
+
+        return view('conversion/area', ['event' => true, 'data' => $aData]);
+    }
 
 }

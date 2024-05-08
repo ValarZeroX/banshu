@@ -27,6 +27,19 @@ $(function () {
         calculateTemperature($(this).attr("id"), jsonData, $(this).val())
     })
 
+    $('.calculateBMI').on("click", function () {
+        let height = $('#height').val()
+        let weight = $('#weight').val()
+        let reslut = weight / ((height/100) * (height/100))
+        let roundNumber = Number(reslut.toFixed(2))
+        $('.result').text(roundNumber)
+        let prime = roundNumber/25
+        let roundPrime = Number(prime.toFixed(2))
+        $('.result_prime').text(roundPrime)
+    })
+
+
+
     function calculate(lengthID, jsonData, inputValue) {
         let regex = /^-?\d*\.?\d+$/;
         if (!regex.test(inputValue)) {
