@@ -17,10 +17,11 @@
         <div class="col">
             <div class="card">
                 <div class="card-header">
-                    {{ __('banshus.metric_units')}}
+                    <span class="metric_units">{{ __('banshus.metric_units')}}</span>
+                    <span class="imperial_units hidden">{{ __('banshus.imperial_units')}}</span>
                 </div>
                 <div class="card-body">
-                    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2">
+                    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 metric_units">
                         <div class="col">
                             <label for="height" class="form-label">{{ __('banshus.height')}}</label>
                             <div class="input-group mb-3">
@@ -38,8 +39,31 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2">
+                    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-1 imperial_units hidden">
                         <div class="col">
+                            <label for="foot" class="form-label">{{ __('banshus.height')}}</label>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control decOnly"
+                                    placeholder="{{ __('banshus.enter_value')}}" id="foot">
+                                <span class="input-group-text">ft</span>
+                                <input type="text" class="form-control decOnly"
+                                    placeholder="{{ __('banshus.enter_value')}}" id="inch">
+                                <span class="input-group-text">in</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <label for="pound" class="form-label">{{ __('banshus.weight')}}</label>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control decOnly"
+                                    placeholder="{{ __('banshus.enter_value')}}" id="pound">
+                                <span class="input-group-text">lb</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-1">
+                        <div class="col">
+                            <span class="metric_units"><button type="button" class="btn btn-outline-success change_imperial">{{ __('banshus.switch_to_imperial_units')}}</button></span>
+                            <span class="imperial_units hidden"><button type="button" class="btn btn-outline-success change_metric">{{ __('banshus.switch_to_imperial_units')}}</button></span>
                             <button type="submit" class="btn btn-success calculateBMI">{{ __('banshus.calculate')}}</button>
                         </div>
                     </div>

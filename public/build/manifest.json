@@ -40,12 +40,12 @@
     "src": "node_modules/material-icons/iconfont/material-icons.woff2"
   },
   "resources/js/app.js": {
-    "file": "assets/app-DuUTHaEl.js",
+    "file": "assets/app-CmRy6zVf.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
     "css": [
-      "assets/app-KrtDsK0P.css"
+      "assets/app-CCCIolrf.css"
     ],
     "assets": [
       "assets/material-icons-kAwBdRge.woff2",

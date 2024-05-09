@@ -22,4 +22,6 @@ return [
     'weight' => '體重',
     'calculate' => '計算',
     'result' => '結果',
+    'switch_to_imperial_units' => '切換英制單位 ',
+    'switch_to_metric_units' => '切換公制單位',
 ];

@@ -22,4 +22,6 @@ return [
     'weight' => 'Weight',
     'calculate' => 'Calculate',
     'result' => 'Result',
+    'switch_to_imperial_units' => 'Switch to Imperial Units',
+    'switch_to_metric_units' => 'Switch to Metric Units',
 ];
