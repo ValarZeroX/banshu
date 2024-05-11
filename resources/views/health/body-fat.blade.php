@@ -2,6 +2,7 @@
 @section('title', __('banshus.body_fat_calculator'))
 @section('description', __('description.body_fat'))
 @section('main')
+@vite(['resources/js/health.js'])
 <div class="container">
     <h1>{{ __('banshus.body_fat_calculator')}}</h1>
     <nav aria-label="breadcrumb">
