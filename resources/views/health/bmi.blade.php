@@ -1,6 +1,6 @@
 @extends('layouts.main')
 @section('title', __('banshus.bmi_calculator'))
-@section('description', __('description.area'))
+@section('description', __('description.bmi'))
 @section('main')
 <div class="container">
     <h1>{{ __('banshus.bmi_calculator')}}</h1>
@@ -63,7 +63,7 @@
                     <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-1">
                         <div class="col">
                             <span class="metric_units"><button type="button" class="btn btn-outline-success change_imperial">{{ __('banshus.switch_to_imperial_units')}}</button></span>
-                            <span class="imperial_units hidden"><button type="button" class="btn btn-outline-success change_metric">{{ __('banshus.switch_to_imperial_units')}}</button></span>
+                            <span class="imperial_units hidden"><button type="button" class="btn btn-outline-success change_metric">{{ __('banshus.switch_to_metric_units')}}</button></span>
                             <button type="submit" class="btn btn-success calculateBMI">{{ __('banshus.calculate')}}</button>
                         </div>
                     </div>

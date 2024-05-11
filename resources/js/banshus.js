@@ -1,5 +1,3 @@
-import { forEach } from "lodash";
-
 $(function () {
     'use strict'
     $('#languageSelect').change(function () {
@@ -27,44 +25,44 @@ $(function () {
         calculateTemperature($(this).attr("id"), jsonData, $(this).val())
     })
 
-    $(document).on("click", '.calculateBMI', function () {
-        let height = $('#height').val()
-        let weight = $('#weight').val()
-        let reslut = weight / ((height / 100) * (height / 100))
-        let roundNumber = Number(reslut.toFixed(2))
-        $('.result').text(roundNumber)
-        let prime = roundNumber / 25
-        let roundPrime = Number(prime.toFixed(2))
-        $('.result_prime').text(roundPrime)
-    })
+    // $('.change_imperial').on("click", function () {
+    //     $('.metric_units').hide()
+    //     $('.imperial_units').show()
+    //     $('.calculateBMI').attr('class')
+    //     $('.calculateBMI').removeClass('calculateBMI').addClass('calculateBMIImperial');
+    // })
 
-    $('.change_imperial').on("click", function () {
-        $('.metric_units').hide()
-        $('.imperial_units').show()
-        $('.calculateBMI').attr('class')
-        $('.calculateBMI').removeClass('calculateBMI').addClass('calculateBMIImperial');
-    })
+    // $('.change_metric').on("click", function () {
+    //     $('.imperial_units').hide()
+    //     $('.metric_units').show()
+    //     $('.calculateBMIImperial').removeClass('calculateBMIImperial').addClass('calculateBMI');
+    // })
 
-    $('.change_metric').on("click", function () {
-        $('.imperial_units').hide()
-        $('.metric_units').show()
-        $('.calculateBMIImperial').removeClass('calculateBMIImperial').addClass('calculateBMI');
-    })
+    // $(document).on("click", '.calculateBMI', function () {
+    //     let height = $('#height').val()
+    //     let weight = $('#weight').val()
+    //     let reslut = weight / ((height / 100) * (height / 100))
+    //     let roundNumber = Number(reslut.toFixed(2))
+    //     $('.result').text(roundNumber)
+    //     let prime = roundNumber / 25
+    //     let roundPrime = Number(prime.toFixed(2))
+    //     $('.result_prime').text(roundPrime)
+    // })
 
-    $(document).on("click", '.calculateBMIImperial', function () {
-        let foot = $('#foot').val()
-        let inch = $('#inch').val()
-        let pound = $('#pound').val()
-        let totalInches = (foot * 12) + parseInt(inch)
-        let totalMeters = (totalInches*0.0254)
-        let weightKg = pound * 0.45359237
-        let bmi = weightKg / (totalMeters * totalMeters)
-        let roundNumber = Number(bmi.toFixed(2))
-        $('.result').text(roundNumber)
-        let prime = roundNumber/25
-        let roundPrime = Number(prime.toFixed(2))
-        $('.result_prime').text(roundPrime)
-    })
+    // $(document).on("click", '.calculateBMIImperial', function () {
+    //     let foot = $('#foot').val()
+    //     let inch = $('#inch').val()
+    //     let pound = $('#pound').val()
+    //     let totalInches = (foot * 12) + parseInt(inch)
+    //     let totalMeters = (totalInches*0.0254)
+    //     let weightKg = pound * 0.45359237
+    //     let bmi = weightKg / (totalMeters * totalMeters)
+    //     let roundNumber = Number(bmi.toFixed(2))
+    //     $('.result').text(roundNumber)
+    //     let prime = roundNumber/25
+    //     let roundPrime = Number(prime.toFixed(2))
+    //     $('.result_prime').text(roundPrime)
+    // })
 
     function calculate(lengthID, jsonData, inputValue) {
         let regex = /^-?\d*\.?\d+$/;

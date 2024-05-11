@@ -28,6 +28,22 @@
                 </div>
             </div>
         </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-header text-center">
+                    {{ __('banshus.body_fat')}}
+                </div>
+                <div class="card-body">
+                    <p>{{ __('description.body_fat')}}</p>
+                </div>
+                <div class="card-footer text-center">
+                    <div class="btn-group">
+                        <a href="/{{ app()->getLocale() }}/health/body-fat" class="btn btn-sm btn-outline-secondary"
+                            role="button">{{ __('banshus.proceed')}}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 @endsection

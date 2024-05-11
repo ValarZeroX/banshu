@@ -11,3 +11,8 @@ Route::get('/bmi', function (string $locale) {
     App::setLocale($locale);
     return view('health/bmi');
 });
+
+Route::get('/body-fat', function (string $locale) {
+    App::setLocale($locale);
+    return view('health/body-fat');
+});
