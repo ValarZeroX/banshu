@@ -1,5 +1,6 @@
 @extends('layouts.main')
 @section('title', __('banshus.health') . ' - Banshu')
+@section('description', __('description.health'))
 @section('main')
 @vite(['resources/js/health.js'])
 <div class="container">
