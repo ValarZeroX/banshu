@@ -63,6 +63,7 @@ $(function () {
         } else {
             isCheck = (!isNaN(neck) && !isNaN(waist) && !isNaN(hip))
         }
+        let bodyFat = 0
         if (isCheck) {
             let logValue = 0
             if (gender == 1) {
@@ -71,24 +72,27 @@ $(function () {
                 logValue = Math.log10(waist + hip - neck)
             }
             let logHeight = Math.log10(height);
-            let result = 0
             if (gender == 1) {
-                result = (495 / (1.0324 - 0.190747 * logValue + 0.15456 * logHeight)) - 450
+                bodyFat = (495 / (1.0324 - 0.190747 * logValue + 0.15456 * logHeight)) - 450
             } else {
-                result = (495 / (1.29579 - 0.35004 * logValue + 0.22100 * logHeight)) - 450
+                bodyFat = (495 / (1.29579 - 0.35004 * logValue + 0.22100 * logHeight)) - 450
             }
-            let roundResult = Number(result.toFixed(2))
-            $('.result').text(roundResult + '%')
         } else {
-            let bodyFat = 0
             if (age <= 15) {
                 bodyFat = (1.51 * bmi) + (0.7 * age) - (3.6 * gender) + 1.4
             } else {
                 bodyFat = (1.2 * bmi) + (0.23 * age) - (10.8 * gender) - 5.4
             }
-            let roundBodyFat = Number(bodyFat.toFixed(2))
-            $('.result').text(roundBodyFat + '%')
         }
+        let roundBodyFat = Number(bodyFat.toFixed(2))
+        $('.result').text(roundBodyFat + '%')
+        let category = ''
+        if (gender == 1) {
+            category = setBoyBodyFatResult(roundBodyFat, age)
+        } else {
+            category = setGirlBodyFatResult(roundBodyFat, age)
+        }
+        $('.result_1').text(category);
     })
 
     $(document).on("click", '.calculateBodyFatImperial', function () {
@@ -151,15 +155,13 @@ $(function () {
             }
             isCheck = (neckInch == 0 || waistInch == 0 || hipInch == 0)
         }
+        let bodyFat = 0
         if (isCheck) {
-            let bodyFat = 0
             if (age <= 15) {
                 bodyFat = (1.51 * bmi) + (0.7 * age) - (3.6 * gender) + 1.4
             } else {
                 bodyFat = (1.2 * bmi) + (0.23 * age) - (10.8 * gender) - 5.4
             }
-            let roundBodyFat = Number(bodyFat.toFixed(2))
-            $('.result').text(roundBodyFat + '%')
         } else {
             let logValue = 0
             if (gender == 1) {
@@ -171,18 +173,29 @@ $(function () {
             let logHeight = Math.log10(totalInches);
             let result = 0
             if (gender == 1) {
-                result = 86.010 * logValue - 70.041 * logHeight + 36.76;
+                bodyFat = 86.010 * logValue - 70.041 * logHeight + 36.76;
             } else {
-                result = 163.205 * logValue - 97.684 * logHeight - 78.387;
+                bodyFat = 163.205 * logValue - 97.684 * logHeight - 78.387;
             }
-            let roundResult = Number(result.toFixed(2))
-            $('.result').text(roundResult + '%')
         }
+        let roundBodyFat = Number(bodyFat.toFixed(2))
+        $('.result').text(roundBodyFat + '%')
+        let category = ''
+        if (gender == 1) {
+            category = setBoyBodyFatResult(roundBodyFat, age)
+        } else {
+            category = setGirlBodyFatResult(roundBodyFat, age)
+        }
+        $('.result_1').text(category);
     })
 
     $(document).on("click", '.calculateBMI', function () {
         let height = $('#height').val()
         let weight = $('#weight').val()
+
+        if (height == '' || weight == '') {
+            return
+        }
         let reslut = weight / ((height / 100) * (height / 100))
         let roundNumber = Number(reslut.toFixed(2))
         $('.result').text(roundNumber)
@@ -195,7 +208,10 @@ $(function () {
         let foot = $('#foot').val()
         let inch = $('#inch').val()
         let pound = $('#pound').val()
-        let totalInches = (foot * 12) + parseInt(inch)
+        if (foot == '' || inch == '' || pound == '') {
+            return
+        }
+        let totalInches = (foot * 12) + parseFloat(inch)
         let totalMeters = (totalInches * 0.0254)
         let weightKg = pound * 0.45359237
         let bmi = weightKg / (totalMeters * totalMeters)
@@ -205,4 +221,103 @@ $(function () {
         let roundPrime = Number(prime.toFixed(2))
         $('.result_prime').text(roundPrime)
     })
+
+    function setBoyBodyFatResult(roundBodyFat, age) {
+        let underfat = window.health.underfat
+        let healthy = window.health.healthy
+        let overfat = window.health.overfat
+        let obese = window.health.obese
+
+        if (age <= 39) {
+            if (roundBodyFat <= 10) {
+                return underfat;
+            }
+            if (roundBodyFat > 10 && roundBodyFat <= 21) {
+                return healthy;
+            }
+            if (roundBodyFat > 21 && roundBodyFat <= 26) {
+                return overfat;
+            }
+            if (roundBodyFat > 26) {
+                return obese;
+            }
+        }
+        if (age > 39 && age <= 59) {
+            if (roundBodyFat <= 11) {
+                return underfat;
+            }
+            if (roundBodyFat > 11 && roundBodyFat <= 22) {
+                return healthy;
+            }
+            if (roundBodyFat > 22 && roundBodyFat <= 27) {
+                return overfat;
+            }
+            if (roundBodyFat > 27) {
+                return obese;
+            }
+        }
+        if (age > 59) {
+            if (roundBodyFat <= 13) {
+                return underfat;
+            }
+            if (roundBodyFat > 13 && roundBodyFat <= 24) {
+                return healthy;
+            }
+            if (roundBodyFat > 24 && roundBodyFat <= 29) {
+                return overfat;
+            }
+            if (roundBodyFat > 30) {
+                return obese;
+            }
+        }
+    }
+    function setGirlBodyFatResult(roundBodyFat, age) {
+        let underfat = window.health.underfat
+        let healthy = window.health.healthy
+        let overfat = window.health.overfat
+        let obese = window.health.obese
+
+        if (age <= 39) {
+            if (roundBodyFat <= 20) {
+                return underfat;
+            }
+            if (roundBodyFat > 21 && roundBodyFat <= 34) {
+                return healthy;
+            }
+            if (roundBodyFat > 34 && roundBodyFat <= 39) {
+                return overfat;
+            }
+            if (roundBodyFat > 39) {
+                return obese;
+            }
+        }
+        if (age > 39 && age <= 59) {
+            if (roundBodyFat <= 21) {
+                return underfat;
+            }
+            if (roundBodyFat > 21 && roundBodyFat <= 35) {
+                return healthy;
+            }
+            if (roundBodyFat > 35 && roundBodyFat <= 40) {
+                return overfat;
+            }
+            if (roundBodyFat > 40) {
+                return obese;
+            }
+        }
+        if (age > 59) {
+            if (roundBodyFat <= 22) {
+                return underfat;
+            }
+            if (roundBodyFat > 22 && roundBodyFat <= 29) {
+                return healthy;
+            }
+            if (roundBodyFat > 29 && roundBodyFat <= 36) {
+                return overfat;
+            }
+            if (roundBodyFat > 36) {
+                return obese;
+            }
+        }
+    }
 })

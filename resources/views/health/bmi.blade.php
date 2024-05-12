@@ -27,7 +27,7 @@
                             <label for="height" class="form-label">{{ __('banshus.height')}}</label>
                             <div class="input-group mb-3">
                                 <input type="text" class="form-control decOnly"
-                                    placeholder="{{ __('banshus.enter_value')}}" id="height">
+                                    placeholder="{{ __('banshus.required')}}" id="height">
                                 <span class="input-group-text">cm</span>
                             </div>
                         </div>
@@ -35,7 +35,7 @@
                             <label for="weight" class="form-label">{{ __('banshus.weight')}}</label>
                             <div class="input-group mb-3">
                                 <input type="text" class="form-control decOnly"
-                                    placeholder="{{ __('banshus.enter_value')}}" id="weight">
+                                    placeholder="{{ __('banshus.required')}}" id="weight">
                                 <span class="input-group-text">kg</span>
                             </div>
                         </div>
@@ -45,10 +45,10 @@
                             <label for="foot" class="form-label">{{ __('banshus.height')}}</label>
                             <div class="input-group mb-3">
                                 <input type="text" class="form-control decOnly"
-                                    placeholder="{{ __('banshus.enter_value')}}" id="foot">
+                                    placeholder="{{ __('banshus.required')}}" id="foot">
                                 <span class="input-group-text">ft</span>
                                 <input type="text" class="form-control decOnly"
-                                    placeholder="{{ __('banshus.enter_value')}}" id="inch">
+                                    placeholder="{{ __('banshus.required')}}" id="inch">
                                 <span class="input-group-text">in</span>
                             </div>
                         </div>
@@ -56,7 +56,7 @@
                             <label for="pound" class="form-label">{{ __('banshus.weight')}}</label>
                             <div class="input-group mb-3">
                                 <input type="text" class="form-control decOnly"
-                                    placeholder="{{ __('banshus.enter_value')}}" id="pound">
+                                    placeholder="{{ __('banshus.required')}}" id="pound">
                                 <span class="input-group-text">lb</span>
                             </div>
                         </div>

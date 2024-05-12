@@ -192,6 +192,7 @@
                 </div>
                 <div class="card-body">
                     <p class="fs-2 fw-bold">{{ __('health.body_fat')}} = <span class="result"></span></p>
+                    <p class="fs-2 fw-bold">{{ __('health.body_fat_category')}} = <span class="result_1"></span></p>
                 </div>
             </div>
         </div>
@@ -201,6 +202,125 @@
             <p>{{ __('health.body_fat_1')}}</p>
             <p>{{ __('health.body_fat_2')}}</p>
             <p>{{ __('health.body_fat_3')}}</p>
+        </div>
+        <div class="col">
+            <h2>{{ __('health.healthy_body_fat_ranges_for_adults')}}</h2>
+            <p>{{ __('health.body_fat_23')}}</p>
+            <h3>{{ __('health.men')}}</h3>
+            <table class="table table-striped table-bordered">
+                <thead class="table-dark">
+                    <tr>
+                        <th>{{ __('banshus.age')}}</th>
+                        <th>18 - 39</th>
+                        <th>40 - 59</th>
+                        <th>60+</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{ __('health.underfat')}}</td>
+                        <td>0 - 10%</td>
+                        <td>0 - 11%</td>
+                        <td>0 - 13%</td>
+                    </tr>
+                    <tr>
+                        <td>{{ __('health.healthy')}}</td>
+                        <td>11 - 21%</td>
+                        <td>12 - 22%</td>
+                        <td>14 - 24%</td>
+                    </tr>
+                    <tr>
+                        <td>{{ __('health.overfat')}}</td>
+                        <td>22 - 26%</td>
+                        <td>23 - 27%</td>
+                        <td>25 - 29%</td>
+                    </tr>
+                    <tr>
+                        <td>{{ __('health.obese')}}</td>
+                        <td>27 - 45%+</td>
+                        <td>28 - 45%+</td>
+                        <td>30 - 45%+</td>
+                    </tr>
+                </tbody>
+              </table>
+        </div>
+        <div class="col">
+            <h3>{{ __('health.women')}}</h3>
+            <table class="table table-striped table-bordered">
+                <thead class="table-dark">
+                    <tr>
+                        <th>{{ __('banshus.age')}}</th>
+                        <th>18 - 39</th>
+                        <th>40 - 59</th>
+                        <th>60+</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{ __('health.underfat')}}</td>
+                        <td>0 - 20%</td>
+                        <td>0 - 21%</td>
+                        <td>0 - 22%</td>
+                    </tr>
+                    <tr>
+                        <td>{{ __('health.healthy')}}</td>
+                        <td>21 - 34%</td>
+                        <td>22 - 35%</td>
+                        <td>23 - 29%</td>
+                    </tr>
+                    <tr>
+                        <td>{{ __('health.overfat')}}</td>
+                        <td>35 - 39%</td>
+                        <td>36 - 40%</td>
+                        <td>30 - 36%</td>
+                    </tr>
+                    <tr>
+                        <td>{{ __('health.obese')}}</td>
+                        <td>40 - 45%+</td>
+                        <td>41 - 45%+</td>
+                        <td>37 - 45%+</td>
+                    </tr>
+                </tbody>
+              </table>
+        </div>
+        <div class="col">
+            <h2>{{ __('health.american_body_fat_categorization')}}</h2>
+            <table class="table table-striped table-bordered">
+                <thead class="table-dark">
+                    <tr>
+                        <th>{{ __('health.description')}}</th>
+                        <th>{{ __('health.women')}}</th>
+                        <th>{{ __('health.men')}}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{ __('health.essential_fat')}}</td>
+                        <td>10 - 13%</td>
+                        <td>2 - 5%</td>
+                    </tr>
+                    <tr>
+                        <td>{{ __('health.athletes')}}</td>
+                        <td>14 - 20%</td>
+                        <td>6 - 3%</td>
+                    </tr>
+                    <tr>
+                        <td>{{ __('health.fitness')}}</td>
+                        <td>21 - 24%</td>
+                        <td>14 - 17%</td>
+                    </tr>
+                    <tr>
+                        <td>{{ __('health.average')}}</td>
+                        <td>25 - 31%</td>
+                        <td>18 - 24%</td>
+                    </tr>
+                    <tr>
+                        <td>{{ __('health.obese')}}</td>
+                        <td>32%+</td>
+                        <td>25%+</td>
+                    </tr>
+                </tbody>
+              </table>
         </div>
         <div class="col">
             <h2>{{ __('health.body_fat_5')}}</h2>
@@ -230,4 +350,7 @@
         </div>
     </div>
 </div>
+<script>
+    window.health = {!! json_encode(trans('health')) !!};
+</script>
 @endsection
