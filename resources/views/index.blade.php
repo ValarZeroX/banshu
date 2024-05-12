@@ -25,6 +25,22 @@
                 </div>
             </div>
         </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-header text-center">
+                    {{ __('banshus.health')}}
+                </div>
+                <div class="card-body">
+                    <p>{{ __('description.health')}}</p>
+                </div>
+                <div class="card-footer text-center">
+                    <div class="btn-group">
+                        <a href="/{{ app()->getLocale() }}/health" class="btn btn-sm btn-outline-secondary"
+                            role="button">{{ __('banshus.proceed')}}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 @endsection
