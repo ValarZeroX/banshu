@@ -35,4 +35,7 @@ return [
     'required' => 'Required',
     'hip_circumference' => 'Hip Circumference',
     'body_fat' => 'Body Fat',
+    'bmr_calculator' => 'BMR Calculator',
+    'bmr' => 'BMR',
+    'equation' => 'Equation',
 ];

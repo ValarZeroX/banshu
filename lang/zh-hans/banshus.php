@@ -35,4 +35,7 @@ return [
     'required' => '必填',
     'hip_circumference' => '臀围',
     'body_fat' => '体脂率',
+    'bmr_calculator' => '基础代谢率 (BMR)计算',
+    'bmr' => '基础代谢率',
+    'equation' => '公式',
 ];

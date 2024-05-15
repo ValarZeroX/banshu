@@ -35,4 +35,7 @@ return [
     'required' => '必填',
     'hip_circumference' => '臀圍',
     'body_fat' => '體脂率',
+    'bmr_calculator' => '基礎代謝率 (BMR)計算',
+    'bmr' => '基礎代謝率',
+    'equation' => '公式',
 ];

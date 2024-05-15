@@ -8,6 +8,8 @@ $(function () {
         $('.calculateBodyFat').removeClass('calculateBodyFat').addClass('calculateBodyFatImperial');
         $('.calculateBMI').attr('class')
         $('.calculateBMI').removeClass('calculateBMI').addClass('calculateBMIImperial');
+        $('.calculateBMR').attr('class')
+        $('.calculateBMR').removeClass('calculateBMR').addClass('calculateBMRImperial');
         unit = 'imperial'
         if ($('#female').is(':checked')) {
             $('.hip_' + unit).show()
@@ -20,6 +22,8 @@ $(function () {
         $('.calculateBodyFatImperial').removeClass('calculateBodyFatImperial').addClass('calculateBodyFat');
         $('.metric_units').show()
         $('.calculateBMIImperial').removeClass('calculateBMIImperial').addClass('calculateBMI');
+        $('.metric_units').show()
+        $('.calculateBMRImperial').removeClass('calculateBMRImperial').addClass('calculateBMR');
         unit = 'metric'
         if ($('#female').is(':checked')) {
             $('.hip_' + unit).show()
@@ -320,4 +324,106 @@ $(function () {
             }
         }
     }
+
+    $(document).on("click", '.calculateBMR', function () {
+        let gender = 1
+        if ($('#male').is(':checked')) {
+            gender = 1
+        } else if ($('#female').is(':checked')) {
+            gender = 0
+        }
+        let age = $('#age').val()
+        let height = $('#height').val()
+        let weight = $('#weight').val()
+        let equation = $('#equation').val();
+        if (age == "" || height == "" || weight == "") {
+            return
+        }
+        let bmr = 0
+        let male = 0
+        let female = 0
+        if (equation == 1) {
+            male = 10 * weight + 6.25 * height - 5 * age + 5
+            female = 10 * weight + 6.25 * height - 5 * age - 161
+        }
+        if (equation == 2) {
+            male = 13.397 * weight + 4.799 * height - 5.677 * age + 88.362
+            female = 9.247 * weight + 3.098 * height - 4.330 * age + 447.593
+        }
+        if (equation == 3) {
+            let body_fat = $('#body_fat').val();
+            if (body_fat == "") {
+                return
+            }
+            let equation3 = 370 + 21.6 * (1 - body_fat / 100) * weight
+            male = equation3
+            female = equation3
+        }
+
+        if (gender == 1) {
+            bmr = male
+        } else {
+            bmr = female
+        }
+        let roundNumber = Number(bmr.toFixed(2))
+        $('.result').text(roundNumber)
+    })
+
+    $(document).on("click", '.calculateBMRImperial', function () {
+        let gender = 1
+        if ($('#male').is(':checked')) {
+            gender = 1
+        } else if ($('#female').is(':checked')) {
+            gender = 0
+        }
+        let age = $('#age').val()
+        let foot = $('#foot').val()
+        let inch = $('#inch').val()
+        let pound = $('#pound').val()
+        let equation = $('#equation').val();
+        if (age == "" || foot == '' || inch == '' || pound == '') {
+            return
+        }
+
+        let totalInches = (foot * 12) + parseFloat(inch)
+        let height = (totalInches * 2.54)
+        let weight = pound * 0.45359237
+
+        let bmr = 0
+        let male = 0
+        let female = 0
+        if (equation == 1) {
+            male = 10 * weight + 6.25 * height - 5 * age + 5
+            female = 10 * weight + 6.25 * height - 5 * age - 161
+        }
+        if (equation == 2) {
+            male = 13.397 * weight + 4.799 * height - 5.677 * age + 88.362
+            female = 9.247 * weight + 3.098 * height - 4.330 * age + 447.593
+        }
+        if (equation == 3) {
+            let body_fat = $('#body_fat').val();
+            if (body_fat == "") {
+                return
+            }
+            let equation3 = 370 + 21.6 * (1 - body_fat / 100) * weight
+            male = equation3
+            female = equation3
+        }
+        if (gender == 1) {
+            bmr = male
+        } else {
+            bmr = female
+        }
+        let roundNumber = Number(bmr.toFixed(2))
+        $('.result').text(roundNumber)
+    })
+
+    $('#equation').change(function(){
+        let equation = $(this).val()
+        if (equation == 3) {
+            $('.equation_fat').show()
+        } else {
+            $('.equation_fat').hide()
+        }
+    });
 })
