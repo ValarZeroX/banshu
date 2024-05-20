@@ -10,6 +10,8 @@ $(function () {
         $('.calculateBMI').removeClass('calculateBMI').addClass('calculateBMIImperial');
         $('.calculateBMR').attr('class')
         $('.calculateBMR').removeClass('calculateBMR').addClass('calculateBMRImperial');
+        $('.calculateTDEE').attr('class')
+        $('.calculateTDEE').removeClass('calculateTDEE').addClass('calculateTDEEImperial');
         unit = 'imperial'
         if ($('#female').is(':checked')) {
             $('.hip_' + unit).show()
@@ -20,10 +22,9 @@ $(function () {
         $('.imperial_units').hide()
         $('.metric_units').show()
         $('.calculateBodyFatImperial').removeClass('calculateBodyFatImperial').addClass('calculateBodyFat');
-        $('.metric_units').show()
         $('.calculateBMIImperial').removeClass('calculateBMIImperial').addClass('calculateBMI');
-        $('.metric_units').show()
         $('.calculateBMRImperial').removeClass('calculateBMRImperial').addClass('calculateBMR');
+        $('.calculateTDEEImperial').removeClass('calculateTDEEImperial').addClass('calculateTDEE');
         unit = 'metric'
         if ($('#female').is(':checked')) {
             $('.hip_' + unit).show()
@@ -171,7 +172,6 @@ $(function () {
             if (gender == 1) {
                 logValue = Math.log10(waistInch - neckInch);
             } else {
-                console.log(waistInch + hipInch - neckInch)
                 logValue = Math.log10(waistInch + hipInch - neckInch);
             }
             let logHeight = Math.log10(totalInches);
@@ -326,6 +326,34 @@ $(function () {
     }
 
     $(document).on("click", '.calculateBMR', function () {
+        let bmr = BMR()
+        if (!bmr) {
+            return
+        }
+        let roundNumber = Number(bmr.toFixed(2))
+        $('.result').text(roundNumber)
+    })
+
+    $(document).on("click", '.calculateBMRImperial', function () {
+        let bmr = BMRImperial()
+        if (!bmr) {
+            return
+        }
+        let roundNumber = Number(bmr.toFixed(2))
+        $('.result').text(roundNumber)
+    })
+
+    $('#equation').change(function () {
+        let equation = $(this).val()
+        if (equation == 3) {
+            $('.equation_fat').show()
+        } else {
+            $('.equation_fat').hide()
+        }
+    });
+
+    function BMR()
+    {
         let gender = 1
         if ($('#male').is(':checked')) {
             gender = 1
@@ -337,7 +365,7 @@ $(function () {
         let weight = $('#weight').val()
         let equation = $('#equation').val();
         if (age == "" || height == "" || weight == "") {
-            return
+            return false
         }
         let bmr = 0
         let male = 0
@@ -353,7 +381,7 @@ $(function () {
         if (equation == 3) {
             let body_fat = $('#body_fat').val();
             if (body_fat == "") {
-                return
+                return false
             }
             let equation3 = 370 + 21.6 * (1 - body_fat / 100) * weight
             male = equation3
@@ -365,11 +393,10 @@ $(function () {
         } else {
             bmr = female
         }
-        let roundNumber = Number(bmr.toFixed(2))
-        $('.result').text(roundNumber)
-    })
+        return bmr
+    }
 
-    $(document).on("click", '.calculateBMRImperial', function () {
+    function BMRImperial() {
         let gender = 1
         if ($('#male').is(':checked')) {
             gender = 1
@@ -382,7 +409,7 @@ $(function () {
         let pound = $('#pound').val()
         let equation = $('#equation').val();
         if (age == "" || foot == '' || inch == '' || pound == '') {
-            return
+            return false
         }
 
         let totalInches = (foot * 12) + parseFloat(inch)
@@ -403,7 +430,7 @@ $(function () {
         if (equation == 3) {
             let body_fat = $('#body_fat').val();
             if (body_fat == "") {
-                return
+                return false
             }
             let equation3 = 370 + 21.6 * (1 - body_fat / 100) * weight
             male = equation3
@@ -414,16 +441,63 @@ $(function () {
         } else {
             bmr = female
         }
+        return bmr
+    }
+
+    function TDEE() {
+        let activity = $('#activity').val();
+        let level = 1.2
+        switch (activity) {
+            case "1":
+                level = 1.2
+                break;
+            case "2":
+                level = 1.375
+                break;
+            case "3":
+                level = 1.55
+                break;
+            case "4":
+                level = 1.725
+                break;
+            case "5":
+                level = 1.9
+                break;
+            case "6":
+                level = 2.4
+                break;
+            default:
+                level = 1.2
+                break;
+        }
+        return level
+    }
+
+    $(document).on("click", '.calculateTDEE', function () {
+        let bmr = BMR()
+        if (!bmr) {
+            return
+        }
         let roundNumber = Number(bmr.toFixed(2))
         $('.result').text(roundNumber)
+
+        let level = TDEE()
+        let tdee = bmr * level
+        let roundTdee = Number(tdee.toFixed(2))
+        $('.result_tdee').text(roundTdee)
     })
 
-    $('#equation').change(function(){
-        let equation = $(this).val()
-        if (equation == 3) {
-            $('.equation_fat').show()
-        } else {
-            $('.equation_fat').hide()
+    $(document).on("click", '.calculateTDEEImperial', function () {
+        let bmr = BMRImperial()
+        if (!bmr) {
+            return
         }
-    });
+        let roundNumber = Number(bmr.toFixed(2))
+        $('.result').text(roundNumber)
+
+        let level = TDEE()
+        let tdee = bmr * level
+        let roundTdee = Number(tdee.toFixed(2))
+        $('.result_tdee').text(roundTdee)
+    })
 })

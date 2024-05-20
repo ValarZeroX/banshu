@@ -38,4 +38,9 @@ return [
     'bmr_calculator' => 'BMR Calculator',
     'bmr' => 'BMR',
     'equation' => 'Equation',
+    'tdee_calculator' => 'TDEE Calculator',
+    'tdee' => 'TDEE',
+    'activity' => 'Activity',
+    'describe' => 'Describe',
+    'tdee_formula' => 'TDEE Formula',
 ];

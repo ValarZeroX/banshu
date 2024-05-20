@@ -21,3 +21,8 @@ Route::get('/bmr', function (string $locale) {
     App::setLocale($locale);
     return view('health/bmr');
 });
+
+Route::get('/tdee', function (string $locale) {
+    App::setLocale($locale);
+    return view('health/tdee');
+});

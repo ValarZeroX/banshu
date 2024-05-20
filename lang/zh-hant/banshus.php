@@ -36,6 +36,11 @@ return [
     'hip_circumference' => '臀圍',
     'body_fat' => '體脂率',
     'bmr_calculator' => '基礎代謝率 (BMR)計算',
-    'bmr' => '基礎代謝率',
+    'bmr' => '基礎代謝率(BMR)',
     'equation' => '公式',
+    'tdee_calculator' => 'TDEE 計算',
+    'tdee' => 'TDEE',
+    'activity' => '活動',
+    'describe' => '描述',
+    'tdee_formula' => 'TDEE 公式',
 ];
