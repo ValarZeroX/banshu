@@ -8,6 +8,7 @@
             <div class="col">
             </div>
             <div class="col">
+                <a href="https://dcode.tw/language/en" target="_blank">Dcode</a>
             </div>
         </div>
     </div>
