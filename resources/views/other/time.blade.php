@@ -2,7 +2,6 @@
 @section('title', __('other.date_time_calculator'))
 @section('description', __('description.time'))
 @section('main')
-@vite(['resources/js/other.js'])
 <div class="container">
     <h1>{{ __('other.date_time_calculator')}}</h1>
     <nav aria-label="breadcrumb">
