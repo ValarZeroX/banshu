@@ -1,10 +1,10 @@
 {
-  "_banshus-!~{005}~.js": {
+  "_banshus-!~{004}~.js": {
     "file": "assets/banshus-CCCIolrf.css",
-    "src": "_banshus-!~{005}~.js"
+    "src": "_banshus-!~{004}~.js"
   },
-  "_banshus-BGUvUuD0.js": {
-    "file": "assets/banshus-BGUvUuD0.js",
+  "_banshus-jGNNK8T9.js": {
+    "file": "assets/banshus-jGNNK8T9.js",
     "name": "banshus",
     "css": [
       "assets/banshus-CCCIolrf.css"
@@ -87,21 +87,21 @@
     "src": "node_modules/material-icons/iconfont/material-icons.woff2"
   },
   "resources/js/app.js": {
-    "file": "assets/app-Dq1tRZsX.js",
+    "file": "assets/app-CC4ViO17.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
     "imports": [
-      "_banshus-BGUvUuD0.js"
+      "_banshus-jGNNK8T9.js"
     ]
   },
   "resources/js/app_ui.js": {
-    "file": "assets/app_ui-Cp7TBut3.js",
+    "file": "assets/app_ui-vKUSch1S.js",
     "name": "app_ui",
     "src": "resources/js/app_ui.js",
     "isEntry": true,
     "imports": [
-      "_banshus-BGUvUuD0.js"
+      "_banshus-jGNNK8T9.js"
     ],
     "css": [
       "assets/app_ui-V0DyBhaG.css"
@@ -119,12 +119,6 @@
     "file": "assets/health--aXJ5kMn.js",
     "name": "health",
     "src": "resources/js/health.js",
-    "isEntry": true
-  },
-  "resources/js/other.js": {
-    "file": "assets/other-D81ISdf5.js",
-    "name": "other",
-    "src": "resources/js/other.js",
     "isEntry": true
   }
 }
