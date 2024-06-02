@@ -2,6 +2,7 @@
 @section('title', __('other.age_calculator'))
 @section('description', __('description.age'))
 @section('main')
+@vite(['resources/js/other.js'])
 <div class="container">
     <h1>{{ __('other.age_calculator')}}</h1>
     <nav aria-label="breadcrumb">

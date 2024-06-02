@@ -2,11 +2,7 @@
 @section('title', __('other.date_time_calculator'))
 @section('description', __('description.time'))
 @section('main')
-{{--
-<link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.full.min.js">
-</script> --}}
+@vite(['resources/js/other.js'])
 <div class="container">
     <h1>{{ __('other.date_time_calculator')}}</h1>
     <nav aria-label="breadcrumb">

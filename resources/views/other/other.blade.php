@@ -2,7 +2,6 @@
 @section('title', __('banshus.other') . ' - Banshu')
 @section('description', __('description.health'))
 @section('main')
-@vite(['resources/js/health.js'])
 <div class="container">
     <h1>{{ __('banshus.other')}}</h1>
     <nav aria-label="breadcrumb">
