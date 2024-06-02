@@ -2,12 +2,18 @@ import _ from 'lodash';
 window._ = _;
 
 import $ from 'jquery';
-window.$ = $;
+// window.$ = $;
+window.$ = window.jQuery = $;
 
 import * as Popper from '@popperjs/core'
 window.Popper = Popper
 
 import 'bootstrap';
+// import './bootstrap.js';
+
+// import 'jquery-ui/dist/jquery-ui';
+// import 'jquery-ui/ui/widgets/datepicker'; // 引入日期選擇器
+// import 'jquery-ui/themes/base/all.css';   // 引入 jQuery UI 的 CSS
 
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests

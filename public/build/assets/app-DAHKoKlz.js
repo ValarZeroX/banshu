@@ -1,0 +1,1 @@
+import{_ as o,$ as w,P as e,a as i}from"./banshus-BGUvUuD0.js";window._=o;window.$=window.jQuery=w;window.Popper=e;window.axios=i;window.axios.defaults.headers.common["X-Requested-With"]="XMLHttpRequest";

@@ -9,13 +9,17 @@ export default defineConfig({
         hmr: {
             host: 'localhost',
         },
-        watch: {
-            usePolling: true,
-        },
+        // watch: {
+        //     usePolling: true,
+        // },
     },
     plugins: [
         laravel({
-            input: ['resources/js/app.js'],
+            input: [
+                'resources/js/app.js',
+                'resources/js/health.js',
+                'resources/js/app_ui.js',
+            ],
             refresh: true,
         }),
     ],

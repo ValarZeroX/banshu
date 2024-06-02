@@ -93,7 +93,7 @@ a {
     border: 1px solid rgba(26, 54, 126, 0.125);
     display: block;
     // border-radius: 15px;
-
+    margin-bottom: 10px;
     p {
         color: #666;
         font-size: 16px;
@@ -142,4 +142,22 @@ a {
 // }
 .mt-10 {
     margin-top: 10px;
+}
+
+.footer-box {
+    a{
+        color: #495057;
+        text-decoration: none;
+    }
+    a:hover{
+        color: #1266f1;
+    }
+}
+
+.hidden{
+    display: none;
+}
+
+.btn {
+    margin-bottom: 5px;
 }

@@ -1,0 +1,122 @@
+{
+    "hectare": {
+        "hectare": 1,
+        "square_kilometer": 0.01,
+        "square_meter": 10000,
+        "square_centimeter": 100000000,
+        "square_millimeter": 10000000000,
+        "square_micrometer": 10000000000000000,
+        "square_yard": 11959.9,
+        "square_foot": 107639,
+        "square_inch": 15500031,
+        "square_mile": 0.00386102
+    },
+    "square_kilometer": {
+        "hectare": 100,
+        "square_kilometer": 1,
+        "square_meter": 1000000,
+        "square_centimeter": 10000000000,
+        "square_millimeter": 1000000000000,
+        "square_micrometer": 1000000000000000000,
+        "square_yard": 1195990.05,
+        "square_foot": 10763910.4,
+        "square_inch": 1550003100,
+        "square_mile": 0.386102
+    },
+    "square_meter": {
+        "hectare": 0.0001,
+        "square_kilometer": 0.000001,
+        "square_meter": 1,
+        "square_centimeter": 10000,
+        "square_millimeter": 1000000,
+        "square_micrometer": 1000000000000,
+        "square_yard": 1.19599,
+        "square_foot": 10.7639,
+        "square_inch": 1550.0031,
+        "square_mile": 3.861e-7
+    },
+    "square_centimeter": {
+        "hectare": 1e-8,
+        "square_kilometer": 1e-10,
+        "square_meter": 0.0001,
+        "square_centimeter": 1,
+        "square_millimeter": 100,
+        "square_micrometer": 100000000,
+        "square_yard": 0.000119599,
+        "square_foot": 0.00107639,
+        "square_inch": 0.15500031,
+        "square_mile": 3.861e-11
+    },
+    "square_millimeter": {
+        "hectare": 1e-10,
+        "square_kilometer": 1e-12,
+        "square_meter": 0.000001,
+        "square_centimeter": 0.01,
+        "square_millimeter": 1,
+        "square_micrometer": 1000000,
+        "square_yard": 1.19599e-6,
+        "square_foot": 1.07639e-5,
+        "square_inch": 0.0015500031,
+        "square_mile": 3.861e-13
+    },
+    "square_micrometer": {
+        "hectare": 1e-16,
+        "square_kilometer": 1e-18,
+        "square_meter": 1e-12,
+        "square_centimeter": 1e-8,
+        "square_millimeter": 1e-6,
+        "square_micrometer": 1,
+        "square_yard": 1.19599e-12,
+        "square_foot": 1.07639e-11,
+        "square_inch": 1.5500031e-9,
+        "square_mile": 3.861e-19
+    },
+    "square_yard": {
+        "hectare": 8.36127e-5,
+        "square_kilometer": 8.36127e-7,
+        "square_meter": 0.836127,
+        "square_centimeter": 8361.27,
+        "square_millimeter": 836127,
+        "square_micrometer": 836127000000,
+        "square_yard": 1,
+        "square_foot": 9,
+        "square_inch": 1296,
+        "square_mile": 3.2283e-7
+    },
+    "square_foot": {
+        "hectare": 9.2903e-6,
+        "square_kilometer": 9.2903e-8,
+        "square_meter": 0.092903,
+        "square_centimeter": 929.03,
+        "square_millimeter": 92903,
+        "square_micrometer": 92903000000,
+        "square_yard": 0.111111,
+        "square_foot": 1,
+        "square_inch": 144,
+        "square_mile": 2.917e-8
+    },
+    "square_inch": {
+        "hectare": 6.4516e-8,
+        "square_kilometer": 6.4516e-10,
+        "square_meter": 0.00064516,
+        "square_centimeter": 6.4516,
+        "square_millimeter": 645.16,
+        "square_micrometer": 645160000,
+        "square_yard": 0.000771605,
+        "square_foot": 0.00694444,
+        "square_inch": 1,
+        "square_mile": 2.49e-10
+    },
+    "square_mile": {
+        "hectare": 258.999,
+        "square_kilometer": 2.58999,
+        "square_meter": 2589990,
+        "square_centimeter": 25899900000,
+        "square_millimeter": 2.58999e+12,
+        "square_micrometer": 2.58999e+18,
+        "square_yard": 3097600,
+        "square_foot": 27878400,
+        "square_inch": 4014489600,
+        "square_mile": 1
+    }
+}

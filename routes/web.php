@@ -1,21 +1,31 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
+use Illuminate\Support\Facades\Route;
 
 // Route::get('/', function () {
 //     return view('welcome');
 // });
 
 Route::get('/makeSitemap', [PagesController::class, 'makeSitemap']);
-Route::get('/sitemap', [PagesController::class, 'sitemap']);
+Route::get('/sitemap.xml', [PagesController::class, 'sitemap']);
+
 
 Route::get('/', function () {
     App::setLocale('en');
     return view('index');
 });
 
-Route::get('/{locale}', function (string $locale) {
+Route::get('/{locale}/disclaimer', function (string $locale) {
     App::setLocale($locale);
-    return view('index');
+    return view('common/disclaimer');
 });
+
+Route::get('/{locale}', function (string $locale) {
+    if ($locale != 'sitemap.xml') {
+        App::setLocale($locale);
+        return view('index');
+    }
+});
+
+

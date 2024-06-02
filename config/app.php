@@ -86,7 +86,8 @@ return [
 
     'available_locales' => [
         'en' => 'English',
-        'zh-Hant' => '繁體中文',
+        'zh-hant' => '繁體中文',
+        'zh-hans' => '简体中文',
     ],
 
     /*

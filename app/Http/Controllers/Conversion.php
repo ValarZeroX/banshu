@@ -10,35 +10,45 @@ class Conversion extends Controller
     public function getLength(Request $request, $locale)
     {
 
-        $aFile = app_path('JsonData/length.json');
-        $sJsonData = file_get_contents($aFile);
-        $aData = json_decode($sJsonData, true);
+        $file = app_path('JsonData/length.json');
+        $jsonData = file_get_contents($file);
+        $data = json_decode($jsonData, true);
         App::setLocale($locale);
 
-        return view('conversion/length', ['event' => true, 'data' => $aData]);
+        return view('conversion/length', ['event' => true, 'data' => $data]);
     }
 
     public function getWeight(Request $request, $locale)
     {
 
-        $aFile = app_path('JsonData/weight.json');
-        $sJsonData = file_get_contents($aFile);
-        $aData = json_decode($sJsonData, true);
+        $file = app_path('JsonData/weight.json');
+        $jsonData = file_get_contents($file);
+        $data = json_decode($jsonData, true);
         App::setLocale($locale);
 
-        return view('conversion/weight', ['event' => true, 'data' => $aData]);
+        return view('conversion/weight', ['event' => true, 'data' => $data]);
     }
 
     public function getTemperature(Request $request, $locale)
     {
 
-        $aFile = app_path('JsonData/temperature.json');
-        $sJsonData = file_get_contents($aFile);
-        $aData = json_decode($sJsonData, true);
+        $file = app_path('JsonData/temperature.json');
+        $jsonData = file_get_contents($file);
+        $data = json_decode($jsonData, true);
         App::setLocale($locale);
 
-        return view('conversion/temperature', ['event' => true, 'data' => $aData]);
+        return view('conversion/temperature', ['event' => true, 'data' => $data]);
     }
 
+    public function getArea(Request $request, $locale)
+    {
+
+        $file = app_path('JsonData/area.json');
+        $jsonData = file_get_contents($file);
+        $data = json_decode($jsonData, true);
+        App::setLocale($locale);
+
+        return view('conversion/area', ['event' => true, 'data' => $data]);
+    }
 
 }
