@@ -1,0 +1,21 @@
+<?php
+return [
+    "age_calculator" => "年龄计算",
+    "birth_date" => "出生日期",
+    "current_date" => "现在日期",
+    "age" => "年龄",
+    "years" => "岁",
+    "months" => "月",
+    "days" => "天",
+    "weeks" => "周",
+    "hours" => "小时",
+    "minutes" => "分钟",
+    "seconds" => "秒",
+    "total_months" => "总共经过的月数",
+    "total_weeks" => "总共经过的周数",
+    "total_days" => "总共经过的天数",
+    "total_hours" => "总共经过的小时数",
+    "total_minutes" => "总共经过的分钟数",
+    "total_seconds" => "总共经过的秒数",
+    "age_description" => "欢迎使用年龄计算！这是一个精确且易于使用的在线工具，可以根据您的出生日期快速计算出您的年龄。无论您需要以岁、月、日、周、时、分、秒来显示您的年龄，年龄计算都能满足您的需求。除此之外，它还能计算从您出生到现在的总月份、总周数、总天数、总小时数、总分钟数和总秒数。",
+];

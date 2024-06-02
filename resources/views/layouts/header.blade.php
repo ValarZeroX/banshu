@@ -17,6 +17,10 @@
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" aria-current="page" href="/{{ app()->getLocale() }}/conversion">{{
+                            __('banshus.science')}}</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" aria-current="page" href="/{{ app()->getLocale() }}/other">{{
                             __('banshus.other')}}</a>
                     </li>
                 </ul>

@@ -8,7 +8,7 @@
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/{{ app()->getLocale() }}">{{ __('banshus.home')}}</a></li>
             <li class="breadcrumb-item"><a href="/{{ app()->getLocale() }}/conversion">{{
-                    __('banshus.conversion_calculator')}}</a></li>
+                    __('banshus.science')}}</a></li>
             <li class="breadcrumb-item active" aria-current="page">{{ __('banshus.area_conversion')}}</li>
         </ol>
     </nav>

@@ -1,0 +1,21 @@
+<?php
+return [
+    "age_calculator" => "Age Calculator",
+    "birth_date" => "Birth Date",
+    "current_date" => "Current Date",
+    "age" => "Age",
+    "years" => "Years",
+    "months" => "Months",
+    "days" => "Days",
+    "weeks" => "Weeks",
+    "hours" => "Hours",
+    "minutes" => "Minutes",
+    "seconds" => "Seconds",
+    "total_months" => "Total Months",
+    "total_weeks" => "Total Weeks",
+    "total_days" => "Total Days",
+    "total_hours" => "Total Hours",
+    "total_minutes" => "Total Minutes",
+    "total_seconds" => "Total Seconds",
+    "age_description" => "Welcome to the Age Calculator! This is a precise and user-friendly online tool that quickly calculates your age based on your birth date. Whether you need to display your age in years, months, days, weeks, hours, minutes, or seconds, the Age Calculator can meet your needs. Additionally, it calculates the total number of months, weeks, days, hours, minutes, and seconds that have elapsed since your birth.",
+];

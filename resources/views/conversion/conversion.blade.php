@@ -2,12 +2,12 @@
 @section('title', __('banshus.conversion_calculator') . ' - Banshu')
 @section('main')
 <div class="container">
-    <h1>{{ __('banshus.other')}}</h1>
+    <h1>{{ __('banshus.science')}}</h1>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/{{ App::getLocale() }}">{{ __('banshus.home')}}</a></li>
             <li class="breadcrumb-item active" aria-current="page">{{
-                __('banshus.other')}}</li>
+                __('banshus.science')}}</li>
         </ol>
     </nav>
     <h2>{{ __('banshus.unit_conversion')}}</h2>

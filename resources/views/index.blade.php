@@ -12,7 +12,7 @@
         <div class="col">
             <div class="card">
                 <div class="card-header text-center">
-                    {{ __('banshus.conversion_calculator')}}
+                    {{ __('banshus.science')}}
                 </div>
                 <div class="card-body">
                     <p>{{ __('description.conversion_calculator')}}</p>

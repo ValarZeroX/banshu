@@ -9,11 +9,32 @@ import * as Popper from '@popperjs/core'
 window.Popper = Popper
 
 import 'bootstrap';
-// import './bootstrap.js';
 
-// import 'jquery-ui/dist/jquery-ui';
-// import 'jquery-ui/ui/widgets/datepicker'; // 引入日期選擇器
-// import 'jquery-ui/themes/base/all.css';   // 引入 jQuery UI 的 CSS
+// 引入日期選擇器
+import ('jquery-ui/ui/widgets/datepicker').then(() => {
+    $(function() {
+        $("#datepicker_start").datepicker({
+            dateFormat: 'yy-mm-dd'
+        });
+        $("#datepicker_end").datepicker({
+            dateFormat: 'yy-mm-dd'
+        });
+        // var today = new Date();
+        // var yesterday = new Date();
+        // yesterday.setDate(today.getDate() - 1);
+        // $("#datepicker_start").datepicker({
+        //     defaultDate: yesterday,
+        //     setDate: yesterday,
+        //     dateFormat: 'yy-mm-dd'
+        // }).datepicker("setDate", yesterday);
+        // $("#datepicker_end").datepicker({
+        //     defaultDate: today,
+        //     setDate: today,
+        //     dateFormat: 'yy-mm-dd'
+        // }).datepicker("setDate", today);
+    });
+});
+import 'jquery-ui/themes/base/all.css';   // 引入 jQuery UI 的 CSS
 
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
