@@ -17,8 +17,9 @@ export default defineConfig({
         laravel({
             input: [
                 'resources/js/app.js',
-                'resources/js/health.js',
                 'resources/js/app_ui.js',
+                'resources/js/health.js',
+                'resources/js/other.js',
             ],
             refresh: true,
         }),
