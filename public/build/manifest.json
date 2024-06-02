@@ -1,4 +1,51 @@
 {
+  "_banshus-!~{004}~.js": {
+    "file": "assets/banshus-CCCIolrf.css",
+    "src": "_banshus-!~{004}~.js"
+  },
+  "_banshus-BGUvUuD0.js": {
+    "file": "assets/banshus-BGUvUuD0.js",
+    "name": "banshus",
+    "css": [
+      "assets/banshus-CCCIolrf.css"
+    ],
+    "assets": [
+      "assets/material-icons-kAwBdRge.woff2",
+      "assets/material-icons-Dr0goTwe.woff",
+      "assets/material-icons-outlined-DZhiGvEA.woff2",
+      "assets/material-icons-outlined-BpWbwl2n.woff",
+      "assets/material-icons-round-DrirKXBx.woff2",
+      "assets/material-icons-round-BDlwx-sv.woff",
+      "assets/material-icons-sharp-gidztirS.woff2",
+      "assets/material-icons-sharp-CH1KkVu7.woff",
+      "assets/material-icons-two-tone-DuNIpaEj.woff2",
+      "assets/material-icons-two-tone-B7wz7mED.woff"
+    ]
+  },
+  "node_modules/jquery-ui/themes/base/images/ui-icons_444444_256x240.png": {
+    "file": "assets/ui-icons_444444_256x240-66Lx08wv.png",
+    "src": "node_modules/jquery-ui/themes/base/images/ui-icons_444444_256x240.png"
+  },
+  "node_modules/jquery-ui/themes/base/images/ui-icons_555555_256x240.png": {
+    "file": "assets/ui-icons_555555_256x240-DWo_cwHo.png",
+    "src": "node_modules/jquery-ui/themes/base/images/ui-icons_555555_256x240.png"
+  },
+  "node_modules/jquery-ui/themes/base/images/ui-icons_777620_256x240.png": {
+    "file": "assets/ui-icons_777620_256x240-DfhJ1yna.png",
+    "src": "node_modules/jquery-ui/themes/base/images/ui-icons_777620_256x240.png"
+  },
+  "node_modules/jquery-ui/themes/base/images/ui-icons_777777_256x240.png": {
+    "file": "assets/ui-icons_777777_256x240-Buv9k6Yo.png",
+    "src": "node_modules/jquery-ui/themes/base/images/ui-icons_777777_256x240.png"
+  },
+  "node_modules/jquery-ui/themes/base/images/ui-icons_cc0000_256x240.png": {
+    "file": "assets/ui-icons_cc0000_256x240-BXUJj0NM.png",
+    "src": "node_modules/jquery-ui/themes/base/images/ui-icons_cc0000_256x240.png"
+  },
+  "node_modules/jquery-ui/themes/base/images/ui-icons_ffffff_256x240.png": {
+    "file": "assets/ui-icons_ffffff_256x240-C2lg5490.png",
+    "src": "node_modules/jquery-ui/themes/base/images/ui-icons_ffffff_256x240.png"
+  },
   "node_modules/material-icons/iconfont/material-icons-outlined.woff": {
     "file": "assets/material-icons-outlined-BpWbwl2n.woff",
     "src": "node_modules/material-icons/iconfont/material-icons-outlined.woff"
@@ -40,24 +87,32 @@
     "src": "node_modules/material-icons/iconfont/material-icons.woff2"
   },
   "resources/js/app.js": {
-    "file": "assets/app-CoJyGesY.js",
+    "file": "assets/app-DAHKoKlz.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
+    "imports": [
+      "_banshus-BGUvUuD0.js"
+    ]
+  },
+  "resources/js/app_ui.js": {
+    "file": "assets/app_ui-BpDcXKj9.js",
+    "name": "app_ui",
+    "src": "resources/js/app_ui.js",
+    "isEntry": true,
+    "imports": [
+      "_banshus-BGUvUuD0.js"
+    ],
     "css": [
-      "assets/app-CCCIolrf.css"
+      "assets/app_ui-V0DyBhaG.css"
     ],
     "assets": [
-      "assets/material-icons-kAwBdRge.woff2",
-      "assets/material-icons-Dr0goTwe.woff",
-      "assets/material-icons-outlined-DZhiGvEA.woff2",
-      "assets/material-icons-outlined-BpWbwl2n.woff",
-      "assets/material-icons-round-DrirKXBx.woff2",
-      "assets/material-icons-round-BDlwx-sv.woff",
-      "assets/material-icons-sharp-gidztirS.woff2",
-      "assets/material-icons-sharp-CH1KkVu7.woff",
-      "assets/material-icons-two-tone-DuNIpaEj.woff2",
-      "assets/material-icons-two-tone-B7wz7mED.woff"
+      "assets/ui-icons_444444_256x240-66Lx08wv.png",
+      "assets/ui-icons_555555_256x240-DWo_cwHo.png",
+      "assets/ui-icons_ffffff_256x240-C2lg5490.png",
+      "assets/ui-icons_777620_256x240-DfhJ1yna.png",
+      "assets/ui-icons_cc0000_256x240-BXUJj0NM.png",
+      "assets/ui-icons_777777_256x240-Buv9k6Yo.png"
     ]
   },
   "resources/js/health.js": {

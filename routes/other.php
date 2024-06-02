@@ -16,3 +16,8 @@ Route::get('/age', [Other::class, 'getAge']);
 //     return view('other/age');
 // });
 Route::post('/age', [Other::class, 'calculateAge'])->name('calculateAge');
+
+Route::get('/time', function (string $locale) {
+    App::setLocale($locale);
+    return view('other/time');
+});
