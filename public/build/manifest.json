@@ -87,7 +87,7 @@
     "src": "node_modules/material-icons/iconfont/material-icons.woff2"
   },
   "resources/js/app.js": {
-    "file": "assets/app-DAHKoKlz.js",
+    "file": "assets/app-Dq1tRZsX.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
@@ -96,7 +96,7 @@
     ]
   },
   "resources/js/app_ui.js": {
-    "file": "assets/app_ui-BpDcXKj9.js",
+    "file": "assets/app_ui-D_eOb1cl.js",
     "name": "app_ui",
     "src": "resources/js/app_ui.js",
     "isEntry": true,

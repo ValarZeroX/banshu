@@ -2,7 +2,7 @@ import _ from 'lodash';
 window._ = _;
 
 import $ from 'jquery';
-// window.$ = $;
+window.$ = $;
 window.$ = window.jQuery = $;
 
 import * as Popper from '@popperjs/core'
