@@ -24,4 +24,9 @@ return [
     "add" => "Add",
     "subtract" => "Subtract",
     "date_time_description" => "Welcome to the Date and Time Calculator. Whether you need to add or subtract days, hours, minutes, or seconds from a specific date, this feature provides you with quick and accurate results.",
+    "days_between_dates_calculator" => "Days Between Dates Calculator",
+    "days_between_dates_description" => "Calculate the number of days, months, and years between two dates",
+    "start_date" => "Start Date",
+    "end_date" => "End Date",
+    "year" => "Years"
 ];

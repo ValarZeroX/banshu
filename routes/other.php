@@ -21,3 +21,8 @@ Route::get('/time', function (string $locale) {
     App::setLocale($locale);
     return view('other/time');
 });
+
+Route::get('/date', function (string $locale) {
+    App::setLocale($locale);
+    return view('other/date');
+});

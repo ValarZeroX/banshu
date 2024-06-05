@@ -24,4 +24,9 @@ return [
     "add" => "增加",
     "subtract" => "減少",
     "date_time_description" => "歡迎使用日期時間計算器。無論需要在特定日期上加上或減去天數、時數、分鐘或秒數，本功能都能快速且精確地為您提供結果。",
+    "days_between_dates_calculator" => "日期差計算",
+    "days_between_dates_description" => "計算兩個日期相隔多少天、月、年",
+    "start_date" => "開始日期",
+    "end_date" => "結束日期",
+    "year" => "年",
 ];
